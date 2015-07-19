@@ -1,3 +1,4 @@
-app:
-    resource: "@AppBundle/Controller/"
+rogoit_angsym:
+    resource: "@RogoitAngsymBundle/Controller/"
     type:     annotation
+    prefix:   /
