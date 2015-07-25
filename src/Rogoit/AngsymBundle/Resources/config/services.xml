@@ -3,14 +3,15 @@
 <container xmlns="http://symfony.com/schema/dic/services"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
-
-    <!--
     <services>
-        <service id="rogoit_angsym.example" class="Rogoit\AngsymBundle\Example">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+        
+        <service id="rogoit.app.user_handler" class="Rogoit\AngsymBundle\Security\RegistrationHandler">
+            <argument type="service" id="fos_user.user_manager" />
+            <argument type="service" id="security.secure_random" />
+            <argument type="service" id="validator" />
         </service>
+        
+        <service id="rogoit.app.auth_handler" class="Rogoit\AngsymBundle\Handler\AuthenticationHandler" />
+        
     </services>
-    -->
 </container>

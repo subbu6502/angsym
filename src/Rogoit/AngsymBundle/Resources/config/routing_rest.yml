@@ -1,0 +1,9 @@
+users :
+  type: rest
+  resource:     "AppBundle:UserRest"
+  name_prefix:  rogoit_api_
+  
+posts:
+  type: rest
+  resource:     "AppBundle:PostApi"
+  name_prefix:  rogoit_api_
