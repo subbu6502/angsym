@@ -11,7 +11,7 @@ var Metronic = function() {
 
     var resizeHandlers = [];
 
-    var assetsPath = '../../assets/';
+    var assetsPath = '/bundles/rogoitangsym/assets/';
 
     var globalImgPath = 'global/img/';
 
