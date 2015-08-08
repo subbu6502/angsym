@@ -489,6 +489,43 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
             }
         })
 
+        .state('login', {
+            url: "/login.html",
+            templateUrl: "/bundles/rogoitangsym/views/login.html",
+            data: {pageTitle: 'Registration', pageSubTitle: 'form components & widgets sample'},
+            controller: "GeneralPageController",
+            resolve: {
+                deps: ['$ocLazyLoad', function($ocLazyLoad) {
+                    return $ocLazyLoad.load([{
+                        name: 'MetronicApp',
+                        insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+                        files: [
+                            '/bundles/rogoitangsym/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css',
+                            '/bundles/rogoitangsym/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css',
+                            '/bundles/rogoitangsym/assets/global/plugins/jquery-tags-input/jquery.tagsinput.css',
+                            '/bundles/rogoitangsym/assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css',
+                            '/bundles/rogoitangsym/assets/global/plugins/typeahead/typeahead.css',
+
+                            '/bundles/rogoitangsym/assets/global/plugins/fuelux/js/spinner.min.js',
+                            '/bundles/rogoitangsym/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js',
+                            '/bundles/rogoitangsym/assets/global/plugins/jquery-inputmask/jquery.inputmask.bundle.min.js',
+                            '/bundles/rogoitangsym/assets/global/plugins/jquery.input-ip-address-control-1.0.min.js',
+                            '/bundles/rogoitangsym/assets/global/plugins/bootstrap-pwstrength/pwstrength-bootstrap.min.js',
+                            '/bundles/rogoitangsym/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js',
+                            '/bundles/rogoitangsym/assets/global/plugins/jquery-tags-input/jquery.tagsinput.min.js',
+                            '/bundles/rogoitangsym/assets/global/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js',
+                            '/bundles/rogoitangsym/assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js',
+                            '/bundles/rogoitangsym/assets/global/plugins/typeahead/handlebars.min.js',
+                            '/bundles/rogoitangsym/assets/global/plugins/typeahead/typeahead.bundle.min.js',
+                            '/bundles/rogoitangsym/assets/admin/pages/scripts/components-form-tools.js',
+
+                            '/bundles/rogoitangsym/js/controllers/GeneralPageController.js'
+                        ]
+                    }]);
+                }]
+            }
+        })
+
 }]);
 
 /* Init global settings and run the app */
