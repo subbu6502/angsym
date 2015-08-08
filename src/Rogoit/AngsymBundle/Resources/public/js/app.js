@@ -164,8 +164,8 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
 
         // AngularJS plugins
         .state('fileupload', {
-            url: "/file_upload.html",
-            templateUrl: "views/file_upload.html",
+            url: "/rogoit/file_upload.html",
+            templateUrl: "/bundles/rogoitangsym/views/file_upload.html",
             data: {pageTitle: 'AngularJS File Upload', pageSubTitle: 'angularjs file upload'},
             controller: "GeneralPageController",
             resolve: {
@@ -187,8 +187,8 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
 
         // UI Select
         .state('uiselect', {
-            url: "/ui_select.html",
-            templateUrl: "views/ui_select.html",
+            url: "/rogoit/ui_select.html",
+            templateUrl: "/bundles/rogoitangsym/views/ui_select.html",
             data: {pageTitle: 'AngularJS Ui Select', pageSubTitle: 'select2 written in angularjs'},
             controller: "UISelectController",
             resolve: {
@@ -212,8 +212,8 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
 
         // UI Bootstrap
         .state('uibootstrap', {
-            url: "/ui_bootstrap.html",
-            templateUrl: "views/ui_bootstrap.html",
+            url: "/rogoit/ui_bootstrap.html",
+            templateUrl: "/bundles/rogoitangsym/views/ui_bootstrap.html",
             data: {pageTitle: 'AngularJS UI Bootstrap', pageSubTitle: 'bootstrap components written in angularjs'},
             controller: "GeneralPageController",
             resolve: {
@@ -230,8 +230,8 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
 
         // Tree View
         .state('tree', {
-            url: "/tree",
-            templateUrl: "views/tree.html",
+            url: "/rogoit/tree",
+            templateUrl: "/bundles/rogoitangsym/views/tree.html",
             data: {pageTitle: 'jQuery Tree View', pageSubTitle: 'tree view samples'},
             controller: "GeneralPageController",
             resolve: {
@@ -253,8 +253,8 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
 
         // Form Tools
         .state('formtools', {
-            url: "/form-tools",
-            templateUrl: "views/form_tools.html",
+            url: "/rogoit/form-tools",
+            templateUrl: "/bundles/rogoitangsym/views/form_tools.html",
             data: {pageTitle: 'Form Tools', pageSubTitle: 'form components & widgets sample'},
             controller: "GeneralPageController",
             resolve: {
@@ -291,8 +291,8 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
 
         // Date & Time Pickers
         .state('pickers', {
-            url: "/pickers",
-            templateUrl: "views/pickers.html",
+            url: "/rogoit/pickers",
+            templateUrl: "/bundles/rogoitangsym/views/pickers.html",
             data: {pageTitle: 'Date & Time Pickers', pageSubTitle: 'date, time, color, daterange pickers'},
             controller: "GeneralPageController",
             resolve: {
@@ -327,8 +327,8 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
 
         // Custom Dropdowns
         .state('dropdowns', {
-            url: "/dropdowns",
-            templateUrl: "views/dropdowns.html",
+            url: "/rogoit/dropdowns",
+            templateUrl: "/bundles/rogoitangsym/views/dropdowns.html",
             data: {pageTitle: 'Custom Dropdowns', pageSubTitle: 'select2 & bootstrap select dropdowns'},
             controller: "GeneralPageController",
             resolve: {
@@ -356,8 +356,8 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
 
         // Advanced Datatables
         .state('datatablesAdvanced', {
-            url: "/datatables/advanced.html",
-            templateUrl: "views/datatables/advanced.html",
+            url: "/rogoit/datatables/advanced.html",
+            templateUrl: "/bundles/rogoitangsym/views/datatables/advanced.html",
             data: {pageTitle: 'Advanced Datatables', pageSubTitle: 'advanced datatables samples'},
             controller: "GeneralPageController",
             resolve: {
@@ -384,8 +384,8 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
 
         // Ajax Datetables
         .state('datatablesAjax', {
-            url: "/datatables/ajax.html",
-            templateUrl: "views/datatables/ajax.html",
+            url: "/rogoit/datatables/ajax.html",
+            templateUrl: "/bundles/rogoitangsym/views/datatables/ajax.html",
             data: {pageTitle: 'Ajax Datatables', pageSubTitle: 'ajax datatables samples'},
             controller: "GeneralPageController",
             resolve: {
@@ -414,8 +414,8 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
 
         // User Profile
         .state("profile", {
-            url: "/profile",
-            templateUrl: "views/profile/main.html",
+            url: "/rogoit/profile",
+            templateUrl: "/bundles/rogoitangsym/views/profile/main.html",
             data: {pageTitle: 'User Profile', pageSubTitle: 'user profile sample'},
             controller: "UserProfileController",
             resolve: {
@@ -442,29 +442,29 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
 
         // User Profile Dashboard
         .state("profile.dashboard", {
-            url: "/dashboard",
-            templateUrl: "views/profile/dashboard.html",
+            url: "/rogoit/dashboard",
+            templateUrl: "/bundles/rogoitangsym/views/profile/dashboard.html",
             data: {pageTitle: 'User Profile', pageSubTitle: 'user profile dashboard sample'}
         })
 
         // User Profile Account
         .state("profile.account", {
-            url: "/account",
-            templateUrl: "views/profile/account.html",
+            url: "/rogoit/account",
+            templateUrl: "/bundles/rogoitangsym/views/profile/account.html",
             data: {pageTitle: 'User Account', pageSubTitle: 'user profile account sample'}
         })
 
         // User Profile Help
         .state("profile.help", {
-            url: "/help",
-            templateUrl: "views/profile/help.html",
+            url: "/rogoit/help",
+            templateUrl: "/bundles/rogoitangsym/views/profile/help.html",
             data: {pageTitle: 'User Help', pageSubTitle: 'user profile help sample'}      
         })
 
         // Todo
         .state('todo', {
-            url: "/todo",
-            templateUrl: "views/todo.html",
+            url: "/rogoit/todo",
+            templateUrl: "/bundles/rogoitangsym/views/todo.html",
             data: {pageTitle: 'Todo', pageSubTitle: 'user todo & tasks sample'},
             controller: "TodoController",
             resolve: {
