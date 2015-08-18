@@ -492,7 +492,7 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
         .state('login', {
             url: "/login.html",
             templateUrl: "/bundles/rogoitangsym/views/login.html",
-            data: {pageTitle: 'Registration', pageSubTitle: 'form components & widgets sample'},
+            data: {pageTitle: 'Welcome', pageSubTitle: 'User login or registration'},
             controller: "GeneralPageController",
             resolve: {
                 deps: ['$ocLazyLoad', function($ocLazyLoad) {
